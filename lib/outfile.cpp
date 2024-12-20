@@ -12,7 +12,6 @@
 
 #include <iostream>
 #include <fstream>
-#include <stream>
 
 std::ofstream openToWrite(const std::string& name)
 {
