@@ -40,7 +40,7 @@ int main()
   results.push_back(std::move(f));
 
   // start thread and move the promise to it:
-  std::thread t{getValue, move(p)};
+  std::thread t{getValue, std::move(p)};
   t.detach();  // would not be necessary for std::jthread
   //...
 
